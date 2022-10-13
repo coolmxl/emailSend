@@ -1,128 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <style>
-      a{
-        color: #249AF3;
-        text-decoration: none;
-        background-color: transparent;
-        outline: none;
-        cursor: pointer;
-        transition: color 0.3s;
-      }
-      .hot-a {
-        margin-bottom:10px ;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>~邻水</h1>
-    <div style="width:100%; margin: 0 auto;color:#5f5e5e;text-align:center">
-      <span style="display:block;margin-top:15px;color:#676767;font-size:15px">近期天气预报</span>
-        
-            <div style="display: flex;margin-top:5px;height: 30px;line-height: 30px;justify-content: space-around;align-items: center;">
-                <span style="width:15%; text-align:center;">今天</span>
-                <div style="width:20%; text-align:center;">
-                    <div style="width: 25px;height: 25px;display: inline-block;">
-                      <img style="height:100%;width:100%;vertical-align:middle;" src='https://h5tq.moji.com/tianqi/assets/images/weather/w31.png' alt="">
-                    </div>
-                    <span style="display:inline-block">多云</span>
-                </div>
-                <span style="width:25%; text-align:center;">20° / 28°</span>
-                
-                
-                
-                    <div style="width:35%; ">
-                            <span style="display:inline-block;padding:0 8px;line-height:25px;color:#8fc31f; border-radius:15px; text-align:center;">31 优</span>
-                    </div>
-                
-                
-                
-                
-                
-                
-            </div>
-        
-            <div style="display: flex;margin-top:5px;height: 30px;line-height: 30px;justify-content: space-around;align-items: center;">
-                <span style="width:15%; text-align:center;">明天</span>
-                <div style="width:20%; text-align:center;">
-                    <div style="width: 25px;height: 25px;display: inline-block;">
-                      <img style="height:100%;width:100%;vertical-align:middle;" src='https://h5tq.moji.com/tianqi/assets/images/weather/w31.png' alt="">
-                    </div>
-                    <span style="display:inline-block">多云</span>
-                </div>
-                <span style="width:25%; text-align:center;">22° / 30°</span>
-                
-                
-                
-                    <div style="width:35%; ">
-                            <span style="display:inline-block;padding:0 8px;line-height:25px;color:#8fc31f; border-radius:15px; text-align:center;">49 优</span>
-                    </div>
-                
-                
-                
-                
-                
-                
-            </div>
-        
-            <div style="display: flex;margin-top:5px;height: 30px;line-height: 30px;justify-content: space-around;align-items: center;">
-                <span style="width:15%; text-align:center;">后天</span>
-                <div style="width:20%; text-align:center;">
-                    <div style="width: 25px;height: 25px;display: inline-block;">
-                      <img style="height:100%;width:100%;vertical-align:middle;" src='https://h5tq.moji.com/tianqi/assets/images/weather/w31.png' alt="">
-                    </div>
-                    <span style="display:inline-block">多云</span>
-                </div>
-                <span style="width:25%; text-align:center;">22° / 31°</span>
-                
-                
-                
-                    <div style="width:35%; ">
-                            <span style="display:inline-block;padding:0 8px;line-height:25px;color:#8fc31f; border-radius:15px; text-align:center;">39 优</span>
-                    </div>
-                
-                
-                
-                
-                
-                
-            </div>
-        
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  <style>
+    body {
+      position: relative;
+      min-height: 100%;
+      background: #eee;
+      color: #4c4948;
+      font-size: 14px;
+      font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, "Microsoft JhengHei", "MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
+      line-height: 2;
+    }
+
+    a {
+      color: #249AF3;
+      text-decoration: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .hot-a {
+      margin-bottom: 10px;
+    }
+
+    .item-headline {
+      text-align: left;
+      font-size: .8rem;
+    }
+
+    .item-headline span {
+      margin-left: .5rem;
+    }
+
+    .yiyan_right {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>咫尺远却近❤今天是我们认识的第: 273 天</h3>
+  <div style="width:100%; margin: 0 auto;color:#5f5e5e;text-align:center">
+    <span style="display:block;margin-top:15px;color:#676767;font-size:15px">邻水近期天气预报</span>
+    
+    <div
+      style="display: flex;margin-top:5px;height: 30px;line-height: 30px;justify-content: space-around;align-items: center;">
+      <span style="width:15%; text-align:center;">今天</span>
+      <div style="width:20%; text-align:center;">
+        <div style="width: 25px;height: 25px;display: inline-block;">
+          <img style="height:100%;width:100%;vertical-align:middle;" src='https://h5tq.moji.com/tianqi/assets/images/weather/w2.png' alt="">
         </div>
-        <span style="display:block;color:#676767;font-size:20px">冷热适宜，感觉很舒适。</span>
-        <div style="text-align:center;margin:35px 0;">
-          <!-- <span style="display:block;margin-top:55px;color:#676767;font-size:15px">ONE · 一个</span> -->
-          <span style="display:block;margin-top:25px;font-size:22px; color:#9d9d9d; ">2022 / 09 / 29</span>
-           <img src="http://image.wufazhuce.com/FlRLsDVWpluz_7kbsCJF09ajKvpx" style="width:100%;margin-top:10px;"  alt="">
-           <div style="margin:10px auto;width:85%;color:#5f5e5e;" >生命中的每一件事都是画线问题，遵守别人定下的规矩可不等于尊重生命，如果你想尊重生命，你就得自己画那条线。</div>
-           <span style="color:#b0b0b0;font-size:13px;">约翰·伯格</span>
+        <span style="display:inline-block">阴</span>
+      </div>
+      <span style="width:25%; text-align:center;">15° / 21°</span>
+
+
+      
+      
+      <div style="width:35%; ">
+        <span
+          style="display:inline-block;padding:0 8px;line-height:25px;color:#d7af0e; border-radius:15px; text-align:center;">77 良</span>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+    
+    <div
+      style="display: flex;margin-top:5px;height: 30px;line-height: 30px;justify-content: space-around;align-items: center;">
+      <span style="width:15%; text-align:center;">明天</span>
+      <div style="width:20%; text-align:center;">
+        <div style="width: 25px;height: 25px;display: inline-block;">
+          <img style="height:100%;width:100%;vertical-align:middle;" src='https://h5tq.moji.com/tianqi/assets/images/weather/w2.png' alt="">
         </div>
-        <div>
-          <h3>今日热搜</h3>
-          
-            <div class="hot-a"><a href="" > 英国女王死因确认</a></div>
-          
-            <div class="hot-a"><a href="" > 县委书记为零彩礼低彩礼新人证婚</a></div>
-          
-            <div class="hot-a"><a href="" > 网络辟谣我们一起行动</a></div>
-          
-            <div class="hot-a"><a href="" > 女子沉迷羊了个羊丈夫报警求助</a></div>
-          
-            <div class="hot-a"><a href="" > 张若昀父亲有钱不还又成老赖</a></div>
-          
-            <div class="hot-a"><a href="" > 卖鱼西施直播称长得好看没用</a></div>
-          
-            <div class="hot-a"><a href="" > 国庆放假前的我</a></div>
-          
-            <div class="hot-a"><a href="" > 绵阳涪城区城区部分区域临时管控</a></div>
-          
-            <div class="hot-a"><a href="" > 女子救流浪猫持续半年收到报恩礼</a></div>
-          
+        <span style="display:inline-block">阴</span>
+      </div>
+      <span style="width:25%; text-align:center;">15° / 23°</span>
+
+
+      
+      
+      <div style="width:35%; ">
+        <span
+          style="display:inline-block;padding:0 8px;line-height:25px;color:#d7af0e; border-radius:15px; text-align:center;">68 良</span>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+    
+    <div
+      style="display: flex;margin-top:5px;height: 30px;line-height: 30px;justify-content: space-around;align-items: center;">
+      <span style="width:15%; text-align:center;">后天</span>
+      <div style="width:20%; text-align:center;">
+        <div style="width: 25px;height: 25px;display: inline-block;">
+          <img style="height:100%;width:100%;vertical-align:middle;" src='https://h5tq.moji.com/tianqi/assets/images/weather/w31.png' alt="">
         </div>
-  </body>
+        <span style="display:inline-block">多云</span>
+      </div>
+      <span style="width:25%; text-align:center;">14° / 20°</span>
+
+
+      
+      
+      <div style="width:35%; ">
+        <span
+          style="display:inline-block;padding:0 8px;line-height:25px;color:#d7af0e; border-radius:15px; text-align:center;">75 良</span>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+    
+  </div>
+  <span style="display:block;color:#676767;font-size:20px;text-align: center;">略微偏凉，还是蛮舒适的。</span>
+  <div style="text-align:center;margin:10px 0;">
+    <!-- <span style="display:block;margin-top:55px;color:#676767;font-size:15px">ONE · 一个</span> -->
+
+    <div>
+      <div class="item-headline">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <span>今日诗词</span>
+        <span style="font-size:12px; color:#9d9d9d; ">
+          2022-10-13
+        </span>
+        <div style="text-align:center;">
+          来时父母知隔生，重著衣裳如送死。
+        </div>
+        <div class="yiyan_right" ><span>---王建 《渡辽水》 </span></div>
+      </div>
+      <!-- <div id="poem_sentence"></div>
+      <div id="poem_info" class="yiyan_right"></div> -->
+    </div>
+    <div>
+      <div class="item-headline">
+        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+        <span>今日一言</span>
+      </div>
+      <div id="poem_sentence">一件善举：一只莫基因为你与家人团聚了。</div>
+      <div id="poem_info" class="yiyan_right">---《精灵与萤火意志》</div>
+    </div>
+    <img src="https://cn.bing.com/th?id=OHR.AlaskaMoose_ZH-CN9148253690_1920x1080.jpg" style="width:100%;margin-top:10px;" alt="">
+    <div style="margin:10px auto;width:85%;color:#5f5e5e;"></div>
+    <span style="color:#b0b0b0;font-size:13px;"></span>
+
+
+  </div>
+  <div>
+    <h3>今日热搜</h3>
+    
+    <div class="hot-a"><a href=""> 月子中心在鸡汤里加党参被罚</a></div>
+    
+    <div class="hot-a"><a href=""> 我睡着了连我自己都害怕</a></div>
+    
+    <div class="hot-a"><a href=""> 中国的十个维度</a></div>
+    
+    <div class="hot-a"><a href=""> 三天肩膀就练薄了</a></div>
+    
+    <div class="hot-a"><a href=""> 南京大学首次跻身世界大学排名百强</a></div>
+    
+    <div class="hot-a"><a href=""> 23岁猫咪被众人围观一脸淡定</a></div>
+    
+    <div class="hot-a"><a href=""> 美好生活由你来奏响</a></div>
+    
+    <div class="hot-a"><a href=""> 12岁女孩看自己5岁视频一脸惊讶</a></div>
+    
+    <div class="hot-a"><a href=""> 带着情绪过夜的人在想什么</a></div>
+    
+  </div>
+</body>
+<!-- <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+  jinrishici.load(function (result) {
+    var sentence = document.querySelector("#poem_sentence")
+    var info = document.querySelector("#poem_info")
+    sentence.innerHTML = result.data.origin.content
+    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin
+      .title + '》'
+  });
+</script> -->
+
 </html>

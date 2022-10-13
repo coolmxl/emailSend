@@ -13,7 +13,7 @@ var mailTransport = nodemailer.createTransport({
   secureConnection: true, // 使用SSL方式（安全方式，防止被窃取信息）
   auth: {
     user: "1784090364@qq.com",
-    pass: "vbidxhzwwhdichaf",
+    pass: "hcrlfqtkryyacadj",
   },
 })
 //邮件主题
@@ -27,7 +27,11 @@ async function getAll() {
   data.threeDaysData = await method.getWeatherData()
   data.weatherTip = await method.getWeatherTips()
   console.log(data.weatherTip,'data.weatherTip')
-  data.todayOneData = await getOne.getOne()
+  data.todayOneData = await method.getImgData()
+  data.oneWord = await method.oneWord()
+  data.getDayData = await method.getDayData()
+  data.shiJu = await method.getShiJu()
+  data.title += `今天是我们认识的第: ${data.getDayData.countDay} 天`
   data.hotSearch = await method.getHotSearch()
   const template = ejs.compile(
     fs.readFileSync(path.resolve(__dirname, "mail.ejs"), "utf8")
@@ -52,5 +56,4 @@ async function getAll() {
   })
 }
 getAll();
-
 

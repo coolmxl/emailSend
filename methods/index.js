@@ -83,6 +83,34 @@ const options = {
       )
     })
   },
+  // 获取图片
+  getImgData() {
+    return new Promise((resolve, reject) => {
+      request(
+        "https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1",
+        function (error, response) {
+          if (!error && response.statusCode == 200) {
+            console.log({
+              imgUrl: "https://cn.bing.com" + JSON.parse(res.text).images[0].url.split('&')[0]
+            })
+            let imgUrl = "https://cn.bing.com" + JSON.parse(res.text).images[0].url.split('&')[0]
+            resolve(imgUrl)
+          }
+        }
+      )
+    })
+  },
+  // 在一起时间
+  getDayData() {
+    let current = new Date()
+    // 获取认识时间
+    let known = new Date('2022-1-14')
+    // 获取认识的时间
+    let res = Math.ceil((current - known) / 1000 / 60 / 60 / 24)
+    return {
+      countDay: res
+    }
+  }
 }
 
 module.exports = options

@@ -31,7 +31,7 @@ async function getAll() {
   data.oneWord = await method.oneWord()
   data.getDayData = await method.getDayData()
   data.shiJu = await method.getShiJu()
-  data.title += `今天是我们认识的第: ${data.getDayData.countDay} 天`
+  // data.title = `今天是我们认识的第: ${data.getDayData.countDay} 天`
   data.hotSearch = await method.getHotSearch()
   const template = ejs.compile(
     fs.readFileSync(path.resolve(__dirname, "mail.ejs"), "utf8")
@@ -41,8 +41,7 @@ async function getAll() {
   fs.writeFileSync(`${__dirname}/demo.html`, html, "utf-8")
   var options = {
     from: '"1784090364" <1784090364@qq.com>',
-    to: '"2746626701" <2746626701@qq.com>',
-    // to: '"2198271591" <2198271591@qq.com>',
+    to: '"亲爱的" <2198271591@qq.com>',
     subject: EmailSubject,
     html: html,
   }

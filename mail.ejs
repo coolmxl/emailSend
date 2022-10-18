@@ -47,7 +47,7 @@
 </head>
 
 <body>
-  <h3><%= title %></h3>
+  <h3><%= title %> 今天是我们认识的第:<%= getDayData.countDay %>  天></h3>
   <div style="width:100%; margin: 0 auto;color:#5f5e5e;text-align:center">
     <span style="display:block;margin-top:15px;color:#676767;font-size:15px">邻水近期天气预报</span>
     <% for(var j = 0; j<threeDaysData.length; j++) { %>
@@ -138,7 +138,7 @@
   <div>
     <h3>今日热搜</h3>
     <% for(var j = 0; j<hotSearch.length; j++) { %>
-    <div class="hot-a"><a href=""> <%= hotSearch[j].note %></a></div>
+    <div class="hot-a"><a href="https://weibo.com/"> <%= hotSearch[j].note %></a></div>
     <% } %>
   </div>
 </body>

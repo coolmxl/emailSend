@@ -3,9 +3,8 @@ const cheerio = require("cheerio")
 const request = require("request")
 const axios = require('axios')
 
-// const local = "sichuan/chengdu"
+const local = "sichuan/chengdu"
 // const local = "sichuan/leshan"
-const local = "sichuan/linshui-county"
 const WeatherUrl = "https://tianqi.moji.com/weather/china/" + local
 function getWeatherTips () {
   let p = new Promise(function (resolve, reject) {
